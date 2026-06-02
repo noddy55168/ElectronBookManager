@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerModels\\BookManagerModels.csproj",
+      "projectUniqueName": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerModels\\BookManagerModels.csproj",
       "projectName": "BookManagerModels",
-      "projectPath": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerModels\\BookManagerModels.csproj",
+      "projectPath": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerModels\\BookManagerModels.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerModels\\obj\\",
+      "outputPath": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerModels\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

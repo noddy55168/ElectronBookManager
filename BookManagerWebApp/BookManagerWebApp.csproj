@@ -1,8 +1,17 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup Label="ElectronNetCommon">
+    <Version>1.0.0</Version>
+    <ElectronPackageId>bookmanagerwebapp</ElectronPackageId>
+    <Title>BookManagerWebApp</Title>
+    <Company>BookManager</Company>
+    <Authors>User</Authors>
+    <Description>Book Manager Web Application built with Electron.NET</Description>
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\BookManagerModels\BookManagerModels.csproj" />

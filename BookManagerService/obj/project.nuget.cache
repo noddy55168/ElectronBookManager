@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EnzEbv/itUQ=",
+  "dgSpecHash": "nGCx44rpDiI=",
   "success": true,
-  "projectFilePath": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerService\\BookManagerService.csproj",
+  "projectFilePath": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerService\\BookManagerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.data.sqlite.core\\10.0.8\\microsoft.data.sqlite.core.10.0.8.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.entityframeworkcore\\10.0.8\\microsoft.entityframeworkcore.10.0.8.nupkg.sha512",

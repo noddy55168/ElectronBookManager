@@ -1031,11 +1031,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerRepository\\BookManagerRepository.csproj",
+      "projectUniqueName": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerRepository\\BookManagerRepository.csproj",
       "projectName": "BookManagerRepository",
-      "projectPath": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerRepository\\BookManagerRepository.csproj",
+      "projectPath": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerRepository\\BookManagerRepository.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerRepository\\obj\\",
+      "outputPath": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1057,8 +1057,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\MyFile\\github\\2026\\BookManager\\BookManagerModels\\BookManagerModels.csproj": {
-              "projectPath": "D:\\MyFile\\github\\2026\\BookManager\\BookManagerModels\\BookManagerModels.csproj"
+            "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerModels\\BookManagerModels.csproj": {
+              "projectPath": "D:\\MyFile\\github\\2026\\BookManager\\ElectronBookManager\\BookManagerModels\\BookManagerModels.csproj"
             }
           }
         }
