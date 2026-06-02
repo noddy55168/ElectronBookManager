@@ -1,0 +1,88 @@
+﻿@* 這裡定義了網址必須帶有 int 型態的 id *@
+@page "{id:int}" 
+
+@model BookManagerWebApp.Pages.EditModel
+@{
+    ViewData["Title"] = "編輯書籍";
+}
+
+<div class="container mt-4">
+    <h2>編輯書籍</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                @* 關鍵：隱藏欄位確保 id 被傳回後端 *@
+                <input type="hidden" asp-for="Book.id" />
+
+                <div class="mb-3">
+                    <label asp-for="Book.Name" class="form-label">書名</label>
+                    <input asp-for="Book.Name" class="form-control" />
+                    <span asp-validation-for="Book.Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Author" class="form-label">作者</label>
+                    <input asp-for="Book.Author" class="form-control" />
+                    <span asp-validation-for="Book.Author" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Publishing" class="form-label">出版社</label>
+                    <input asp-for="Book.Publishing" class="form-control" />
+                    <span asp-validation-for="Book.Publishing" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.ISBN" class="form-label">ISBN</label>
+                    <input asp-for="Book.ISBN" class="form-control" />
+                    <span asp-validation-for="Book.ISBN" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Tag" class="form-label">Tag (選填)</label>
+                    <input asp-for="Book.Tag" class="form-control" />
+                </div>
+
+                <div class="mb-3 form-check">
+                    <input type="checkbox" asp-for="Book.IsBorrowed" class="form-check-input" />
+                    <label asp-for="Book.IsBorrowed" class="form-check-label">已借出</label>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Borrower" class="form-label">借閱人</label>
+                    <input asp-for="Book.Borrower" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.BorrowedTime" class="form-label">借閱時間</label>
+                    <input asp-for="Book.BorrowedTime" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.ShouldReturnTime" class="form-label">應歸還時間</label>
+                    <input asp-for="Book.ShouldReturnTime" class="form-control" />
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.LastReturnTime" class="form-label">上一次歸還時間</label>
+                    <input asp-for="Book.LastReturnTime" class="form-control" />
+                </div>
+
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary">儲存</button>
+                    <a asp-page="Index" class="btn btn-secondary">返回列表</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

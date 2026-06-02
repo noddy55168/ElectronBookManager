@@ -1,0 +1,96 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "圖書管理系統 - 首頁";
+}
+
+<div class="text-center mb-4">
+    <h1 class="display-4">歡迎使用圖書管理系統</h1>
+</div>
+
+<div class="container mt-4">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            @* 搜尋表單：使用 GET 方法，這樣搜尋結果可以被書籤收藏 *@
+            <form method="get">
+                <div class="input-group">
+                    <input type="text" class="form-control" asp-for="SearchKeyword"
+                           placeholder="搜尋書名、作者、ISBN..." />
+                    <button class="btn btn-outline-secondary" type="submit">搜尋</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @* 表格上方的標題與新增按鈕 *@
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h3>目前館藏圖書</h3>
+        <a asp-page="Create" class="btn btn-primary">新增書籍</a>
+    </div>
+
+    <table class="table table-striped table-hover shadow-sm">
+        <thead class="table-dark">
+            <tr>
+                <th>書名</th>
+                <th>作者</th>
+                <th>出版社</th>
+                <th>ISBN</th>
+                <th>標籤</th>
+                <th>借閱狀態</th>
+                <th>借閱者</th>
+                <th>借閱時間</th>
+                <th>應歸還時間</th>
+                <th>上次歸還時間</th>
+                <th style="width: 150px;">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            @*檢測書籍狀態 並列出*@
+            @if (Model.Books != null && Model.Books.Any())
+            {
+                @foreach (var book in Model.Books)
+                {
+                    <tr>
+                        <td>@book.Name</td>
+                        <td>@book.Author</td>
+                        <td>@book.Publishing</td>
+                        <td>@book.ISBN</td>
+                        <td>
+                            @if (!string.IsNullOrEmpty(book.Tag))
+                            {
+                                <span class="badge bg-info text-dark">@book.Tag</span>
+                            }
+                        </td>
+                        <td>
+                            <span class="badge @(book.IsBorrowed ? "bg-danger" : "bg-success")">
+                                @(book.IsBorrowed ? "已借出" : "在館內")
+                            </span>
+                        </td>
+                        <td>@book.Borrower</td>
+                        <td>@book.BorrowedTime</td>
+                        <td>@book.ShouldReturnTime</td>
+                        <td>@book.LastReturnTime</td>
+                        <td>
+                            <div class="btn-group">
+                                @* 編輯按鈕 *@
+                                <a asp-page="./Edit" asp-route-id="@book.id" class="btn btn-sm btn-warning">編輯</a>
+
+                                @* 刪除按鈕*@
+                                <form method="post" asp-page-handler="Delete" asp-route-id="@book.id"
+                                      onsubmit="return confirm('確定要刪除《@book.Name》嗎？');" style="display:inline;">
+                                    <button type="submit" class="btn btn-sm btn-danger">刪除</button>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="text-center text-muted">目前暫無藏書資料</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

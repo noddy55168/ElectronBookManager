@@ -1,0 +1,57 @@
+﻿@page
+@model CreateModel
+@{
+    ViewData["Title"] = "新增書籍";
+}
+
+<div class="container mt-4">
+    <h2>新增書籍</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Name" class="form-label">書名</label>
+                    <input asp-for="Book.Name" class="form-control" />
+                    <span asp-validation-for="Book.Name" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Author" class="form-label">作者</label>
+                    <input asp-for="Book.Author" class="form-control" />
+                    <span asp-validation-for="Book.Author" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Publishing" class="form-label">出版社</label>
+                    <input asp-for="Book.Publishing" class="form-control" />
+                    <span asp-validation-for="Book.Publishing" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.ISBN" class="form-label">ISBN</label>
+                    <input asp-for="Book.ISBN" class="form-control" />
+                    <span asp-validation-for="Book.ISBN" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Book.Tag" class="form-label">Tag (選填)</label>
+                    <input asp-for="Book.Tag" class="form-control" />
+                </div>
+
+                <div class="mt-4">
+                    <button type="submit" class="btn btn-primary">儲存</button>
+                    <a asp-page="Index" class="btn btn-secondary">返回列表</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BookManagerModels\BookManagerModels.csproj" />
+    <ProjectReference Include="..\BookManagerRepository\BookManagerRepository.csproj" />
+    <ProjectReference Include="..\BookManagerService\BookManagerService.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="ElectronNET.Core" Version="0.5.0" />
+    <PackageReference Include="ElectronNET.Core.AspNet" Version="0.5.0" />
+  </ItemGroup>
+</Project>
