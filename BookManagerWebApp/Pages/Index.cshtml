@@ -25,7 +25,11 @@
     @* 表格上方的標題與新增按鈕 *@
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h3>目前館藏圖書</h3>
-        <a asp-page="Create" class="btn btn-primary">新增書籍</a>
+        <!-- d-flex 將兩個按鈕綁在一起 gap-2=>間距 -->
+        <div class="d-flex gap-2">
+            <a asp-page="Create" class="btn btn-primary">新增書籍</a>
+            <button type="submit" class="btn btn-info">導入多本書籍(json)</button>
+        </div>
     </div>
 
     <table class="table table-striped table-hover shadow-sm">
@@ -71,7 +75,7 @@
                         <td>@book.ShouldReturnTime</td>
                         <td>@book.LastReturnTime</td>
                         <td>
-                            <div class="btn-group">
+                            <div class="btn-group gap-2">
                                 @* 編輯按鈕 *@
                                 <a asp-page="./Edit" asp-route-id="@book.id" class="btn btn-sm btn-warning">編輯</a>
 
