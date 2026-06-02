@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +31,12 @@ namespace BookManagerRepository
         /// <param name="book"></param>
         /// <returns></returns>
         Task UpsertBookAsync(Book book);
+        /// <summary>
+        /// 批次新增書籍
+        /// </summary>
+        /// <param name="books"></param>
+        /// <returns></returns>
+        Task AddMultipleBooksAsync(IEnumerable<Book> books);
         /// <summary>
         /// 刪除書籍
         /// </summary>

@@ -1,4 +1,4 @@
-﻿using BookManagerModels;
+using BookManagerModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -78,6 +78,23 @@ namespace BookManagerRepository
             }
             await _context.SaveChangesAsync();
         }
+
+        /// <summary>
+        /// 批次新增書籍
+        /// </summary>
+        /// <param name="books"></param>
+        /// <returns></returns>
+        public async Task AddMultipleBooksAsync(IEnumerable<Book> books)
+        {
+            foreach (var book in books)
+            {
+                // 將 id 設為 0
+                book.id = 0;
+                _context.Books.Add(book);
+            }
+            await _context.SaveChangesAsync();
+        }
+
         /// <summary>
         /// 刪除書籍
         /// </summary>

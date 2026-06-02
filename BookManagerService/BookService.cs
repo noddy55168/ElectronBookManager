@@ -1,5 +1,6 @@
 ﻿using BookManagerModels;
 using BookManagerRepository;
+using System.Text.Json;
 
 
 
@@ -28,27 +29,30 @@ namespace BookManagerService
         }
 
         /// <summary>
-        /// 測試資料用 預設插入一筆假資料
+        /// 檢測書本資料 沒有書 則插入假資料
         /// </summary>
         /// <returns></returns>
         public async Task<IEnumerable<Book>> IsBookExist()
         {
+
+            Books = await _bookRepository.GetBooksAsync();
+
             if (Books == null || !Books.Any())
             {
-                await _bookRepository.UpsertBookAsync(new Book
-                {
-                    Name = "測試書本",
-                    Publishing = "測試出版社",
-                    ISBN = "978-986-320-123-4",
-                    Author = "測試作家",
-                    IsBorrowed = false,
-                    Borrower = null,
-                    BorrowedTime = null,
-                    ShouldReturnTime = null,
-                    LastReturnTime = null
-                });
+                var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "booksdataExample.json");
 
-                Books = await _bookRepository.GetBooksAsync();
+                if (File.Exists(filePath))
+                {
+                    var jsonText = await File.ReadAllTextAsync(filePath);
+                    var theNewBooks = JsonSerializer.Deserialize<List<Book>>(jsonText);
+
+                    if (theNewBooks != null)
+                    {
+                        // 呼叫批次寫入
+                        await _bookRepository.AddMultipleBooksAsync(theNewBooks);
+                        Books = await _bookRepository.GetBooksAsync();
+                    }
+                }
             }
 
             return Books;
