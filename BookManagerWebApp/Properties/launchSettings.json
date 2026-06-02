@@ -13,10 +13,10 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "applicationUrl": "http://localhost:5249",
-      "hotReloadEnabled": false,
+      "hotReloadEnabled": false, /*關閉熱重載以防彈窗*/
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": ""
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "" /*阻斷自動注入*/
       }
     },
     "https": {
