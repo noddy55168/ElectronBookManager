@@ -1,0 +1,11 @@
+D:\MyFile\github\2026\BookManager\BookManagerModels\bin\Release\net10.0\BookManagerModels.deps.json
+D:\MyFile\github\2026\BookManager\BookManagerModels\bin\Release\net10.0\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerModels\bin\Release\net10.0\BookManagerModels.pdb
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\BookManagerModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\BookManagerModels.AssemblyInfoInputs.cache
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\BookManagerModels.AssemblyInfo.cs
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\BookManagerModels.csproj.CoreCompileInputs.cache
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\refint\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\BookManagerModels.pdb
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Release\net10.0\ref\BookManagerModels.dll

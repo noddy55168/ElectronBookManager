@@ -1,0 +1,17 @@
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerService.deps.json
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerService.dll
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerService.pdb
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerRepository.dll
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerModels.pdb
+D:\MyFile\github\2026\BookManager\BookManagerService\bin\Debug\net10.0\BookManagerRepository.pdb
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.csproj.AssemblyReference.cache
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.AssemblyInfoInputs.cache
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.AssemblyInfo.cs
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.csproj.CoreCompileInputs.cache
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookMana.70350087.Up2Date
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.dll
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\refint\BookManagerService.dll
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\BookManagerService.pdb
+D:\MyFile\github\2026\BookManager\BookManagerService\obj\Debug\net10.0\ref\BookManagerService.dll

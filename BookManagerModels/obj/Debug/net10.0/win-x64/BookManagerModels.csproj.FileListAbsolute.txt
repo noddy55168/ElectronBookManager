@@ -1,0 +1,11 @@
+D:\MyFile\github\2026\BookManager\BookManagerModels\bin\Debug\net10.0\win-x64\BookManagerModels.deps.json
+D:\MyFile\github\2026\BookManager\BookManagerModels\bin\Debug\net10.0\win-x64\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerModels\bin\Debug\net10.0\win-x64\BookManagerModels.pdb
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\BookManagerModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\BookManagerModels.AssemblyInfoInputs.cache
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\BookManagerModels.AssemblyInfo.cs
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\BookManagerModels.csproj.CoreCompileInputs.cache
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\refint\BookManagerModels.dll
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\BookManagerModels.pdb
+D:\MyFile\github\2026\BookManager\BookManagerModels\obj\Debug\net10.0\win-x64\ref\BookManagerModels.dll
