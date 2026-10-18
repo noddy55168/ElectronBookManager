@@ -15,6 +15,7 @@ namespace BookManagerRepository
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // 使用 SQLite 資料庫，資料庫檔案為 bookmanager.db
+            // 如果沒有讀到bookmanager.db =>自己會生一個同名.db檔案
             optionsBuilder.UseSqlite("Data Source=bookmanager.db");
         }
 

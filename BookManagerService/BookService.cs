@@ -73,5 +73,6 @@ namespace BookManagerService
             await _bookRepository.DeleteBookAsync(id);
             return await _bookRepository.GetBooksAsync();
         }
+        
     }
 }
